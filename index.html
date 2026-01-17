@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Recommendation System</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for a movie...">
+            <button id="search-btn">Search</button>
+        </div>
+    </header>
+    
+    <main>
+        <section id="results">
+            <h2>Search Results</h2>
+            <div id="loading" class="hidden">Loading...</div>
+            <div id="movies-list"></div>
+            <div id="pagination" class="hidden">
+                <button id="prev-page">Previous</button>
+                <span id="page-info"></span>
+                <button id="next-page">Next</button>
+            </div>
+        </section>
+        
+        <section id="details" class="hidden">
+            <h2>Movie Details</h2>
+            <div id="movie-details"></div>
+            <h3>Recommendations</h3>
+            <div id="recommendations"></div>
+        </section>
+        
+        <section id="watchlist">
+            <h2>My Watchlist</h2>
+            <div id="watchlist-list"></div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
